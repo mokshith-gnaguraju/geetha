@@ -1,0 +1,125 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background: #28a745;
+  padding: 36px 60px;
+  flex-wrap: wrap;
+  border-top: 2px solid rgba(244, 162, 97, 0.25);
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.footer-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(244, 162, 97, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.footer-item:hover .phone-icon,
+.footer-item:hover .email-icon {
+  color: #f4a261;
+  transform: scale(1.25) rotate(-10deg);
+}
+
+.footer-item:hover .whatsapp-icon {
+  color: #25D366;
+  transform: scale(1.25) rotate(10deg);
+}
+
+.footer-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-label {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.footer-value {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-value:hover {
+  color: #f4a261;
+}
+
+.phone-icon { color: #f4a261; }
+.email-icon { color: #f4a261; }
+.whatsapp-icon { color: #25D366; }
+
+.footer-divider {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.2), transparent);
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 18px;
+  margin-top: 10px;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.82rem;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.82rem;
+}
+
+.footer-links a:hover {
+  color: #f4a261;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px 20px;
+  }
+  .footer-divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+  }
+}

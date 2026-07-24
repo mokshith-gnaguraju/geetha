@@ -1,0 +1,95 @@
+.cart-page {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #1a1a2e, #0f0c29);
+  padding: 40px;
+  color: #e0e0e0;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  color: #f4a261;
+  margin-bottom: 24px;
+}
+
+.cart-empty {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.cart-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(244, 162, 97, 0.2);
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-edit-input {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid #f4a261;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.btn-edit, .btn-delete, .btn-save {
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: all 0.2s;
+}
+
+.btn-edit {
+  border: 1px solid #4a9eff;
+  color: #4a9eff;
+}
+
+.btn-edit:hover {
+  background: #4a9eff;
+  color: #1a1a2e;
+}
+
+.btn-delete {
+  border: 1px solid #e05555;
+  color: #e05555;
+}
+
+.btn-delete:hover {
+  background: #e05555;
+  color: #fff;
+}
+
+.btn-save {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+}
+
+.btn-save:hover {
+  background: #4caf50;
+  color: #fff;
+}

@@ -1,0 +1,98 @@
+.corporate-section {
+  padding: 70px 40px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #eef1f8 100%);
+  text-align: center;
+}
+
+.corporate-header {
+  margin-bottom: 48px;
+}
+
+.corporate-badge {
+  display: inline-block;
+  background: rgba(26,26,46,0.07);
+  color: #1a1a2e;
+  border: 1px solid rgba(26,26,46,0.18);
+  border-radius: 20px;
+  padding: 4px 18px;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.corporate-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.corporate-section > .corporate-header > p {
+  color: #666;
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.corporate-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f4a261, #e07b39);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.corporate-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.corporate-logo {
+  border-radius: 16px;
+  padding: 32px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.corporate-logo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.corporate-logo:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0,0,0,0.08);
+}
+
+.corporate-logo span {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .corporate-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .corporate-grid { grid-template-columns: repeat(2, 1fr); }
+  .corporate-section { padding: 50px 20px; }
+}

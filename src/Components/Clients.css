@@ -1,0 +1,84 @@
+.clients-card {
+  width: 100%;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(120deg, #c0392b 0%, #e74c3c 50%, #ff6b6b 100%);
+  box-shadow: 0 8px 32px rgba(192, 57, 43, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.clients-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.clients-card::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.clients-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.75;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  max-width: 780px;
+  position: relative;
+  z-index: 1;
+}
+
+.clients-card .contact-btn {
+  flex-shrink: 0;
+  padding: 14px 36px;
+  background: #fff;
+  color: #c0392b;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.clients-card .contact-btn:hover {
+  background: #1a1a2e;
+  color: #fff;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .clients-card {
+    flex-direction: column;
+    padding: 32px 24px;
+    text-align: center;
+  }
+}

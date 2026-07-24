@@ -50,6 +50,8 @@ const Fit = () => {
           <p className="fit-contact-item">#63, 1st Floor, 16th Main, 8th Cross,<br />BTM 1st Stage, Bangalore, India - 560029</p>
           <p className="fit-contact-item">India : +91 9740225633</p>
           <p className="fit-contact-item">info@achieversit.com</p>
+
+          <p>Thank you</p>
         </div>
 
       </div>
